@@ -118,6 +118,7 @@ h1 {
   margin: 12px 16px 0;
   box-shadow: 0 10px 20px rgba(214, 51, 108, 0.12);
   animation: rise-in 520ms ease 80ms both;
+  gap: 8px;
 }
 
 .nav button {
@@ -429,6 +430,88 @@ footer {
   font-size: 13px;
   padding-bottom: 18px;
   animation: fade-in 520ms ease 160ms both;
+}
+
+@media (max-width: 900px) {
+  .menu-item.has-sizes {
+    grid-template-columns: 160px 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .size-list {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+    height: 210px;
+  }
+
+  .logo-wrap {
+    width: 150px;
+    height: 150px;
+    margin: -75px auto 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav button {
+    font-size: 13px;
+  }
+
+  .menu-item,
+  .menu-item.has-sizes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-info {
+    font-size: 13px;
+  }
+
+  .precio {
+    width: 100%;
+    text-align: center;
+  }
+
+  .size-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 12px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .banner {
+    height: 190px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
