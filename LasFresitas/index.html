@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Fresitas | Postres</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.jpeg">
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&family=Nunito:wght@400;500;600&family=Comfortaa:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="banner">
+    <img src="images/banner.png" alt="Banner Las Fresitas" class="banner-img">
+  </div>
+
+  <div class="logo-wrap">
+    <img src="images/logo.jpeg" alt="Logo Las Fresitas" class="logo">
+  </div>
+  <h1>Las Fresitas</h1>
+  <strong><p class="slogan">Postres & dulces que enamoran</p></strong>
+</header>
+
+<nav class="nav">
+  <button onclick="mostrarSeccion('inicio')">📌 Información</button>
+  <button onclick="mostrarSeccion('menu')">🍰 Menú</button>
+  <button onclick="mostrarSeccion('pedidos')">🏠 Pedidos</button>
+</nav>
+
+<section id="inicio" class="card">
+  <h2>📍 Ubicación</h2>
+
+  <p class="text-center">
+    Ven por tus postres favoritos 🍓<br>
+    <strong>Solo para recoger en punto</strong>
+  </p>
+
+  <p class="text-center">
+    Avenida 41 x 28 y 26<br>
+    Paseo Verde
+  </p>
+
+  <p class="text-center">⏰ 5:00 pm – 10:00 pm</p>
+
+  <a class="btn maps" href="https://www.google.com/maps/place/20%C2%B058'05.7%22N+89%C2%B040'49.9%22W/@20.9682617,-89.6831016,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.9682617!4d-89.6805267?hl=es&entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+    🗺️ Abrir Google Maps
+  </a>
+
+  <div class="footer-img">
+    <img src="images/puesto.jpeg" alt="Nuestro puesto">
+  </div>
+</section>
+
+<section id="menu" class="card oculto">
+  <h2>🍰 Nuestro Menú</h2>
+
+  <div class="menu-item has-sizes">
+    <img src="images/Fresas_con_crema.jpeg" alt="Fresas_con_crema">
+    <div class="menu-info">
+      <strong>Fresas con Crema</strong>
+      Crema 100 % hecho de fresas naturales, crema batida & jarabe de fresa o nutella.
+      <br>
+      <br>
+      <strong>Toppings:</strong>
+      Vaso chico 2 Topping
+      <br> 
+      Vaso mediano 3 Topping
+      <br>
+      Vaso grande 4 Topping
+    </div>
+    <div class="size-list">
+      <div class="size-row">
+        <span class="size-label">Vaso Chico</span>
+        <span class="precio">$70</span>
+      </div>
+      <div class="size-row">
+        <span class="size-label">Vaso Mediano</span>
+        <span class="precio">$90</span>
+      </div>
+      <div class="size-row">
+        <span class="size-label">Vaso Grande</span>
+        <span class="precio">$110</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/Conchas_Rellenas.jpeg" alt="Conchas_Rellenas">
+    <div class="menu-info">
+      <strong>Conchas Rellenas</strong>
+      Rellenas con fresas, crema, nutella & crema batida
+    </div>
+    <span class="precio">$50</span>
+  </div>
+
+    <div class="menu-item">
+    <img src="images/Chicharron_preparado.jpeg" alt="Chicharron_preparado">
+    <div class="menu-info">
+      <strong>Chicharrón Preparado</strong>
+      Preparado con repollo, media crema, queso & salsa.
+    </div>
+    <span class="precio">$15</span>
+  </div>
+
+    <div class="menu-item">
+    <img src="images/Hojaldra_jamon_queso.jpg" alt="Hojaldra_jamon_queso">
+    <div class="menu-info">
+      <strong>Hojaldra</strong>
+      Jamón & Queso
+    </div>
+    <span class="precio">$20</span>
+  </div>
+
+    <div class="menu-item">
+    <img src="images/Refrescos.png" alt="Refrescos">
+    <div class="menu-info">
+      <strong>Refrescos</strong>
+      Coca cola & Pepsi de 500ml.
+    </div>
+    <span class="precio">$20</span>
+  </div>
+
+    <div class="menu-item">
+    <img src="images/Agua.png" alt="Aguas">
+    <div class="menu-info">
+      <strong>Aguas</strong>
+      Epura & Cristal de 600ml.
+    </div>
+    <span class="precio">$17</span>
+  </div>
+
+</section>
+
+<section id="pedidos" class="card highlight oculto">
+  <h2>📦 Pedidos por encargo</h2>
+
+  <p class="text-center">
+    Encarga con anticipación ✨<br>
+    Preparamos tu pedido y solo pasas a recogerlo
+  </p>
+
+  <p class="text-center note">
+    📌 No hacemos envíos<br>
+    📌 Solo recoger en el punto
+  </p>
+
+  <a class="btn whatsapp" href="https://wa.me/529992751038" target="_blank">
+    📱 Encargar por WhatsApp
+  </a>
+</section>
+
+<footer>
+  <strong><p>🍓 Gracias por elegir Las Fresitas 🍓</p></strong>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
